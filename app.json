@@ -15,16 +15,16 @@
     "position":"bottom",
     "list": [
       {
-        "pagePath": "pages/posts/post",
-        "text": "阅读",
-        "iconPath": "images/tab/yuedu.png",
-        "selectedIconPath": "images/tab/yuedu_hl.png"
+        "pagePath": "pages/movies/movies",
+        "text": "大学预测",
+        "iconPath": "images/tab/seach.png",
+        "selectedIconPath": "images/tab/search-actived.png"
       },
       {
-        "pagePath": "pages/movies/movies",
-        "text": "电影",
-        "iconPath": "images/tab/dianying.png",
-        "selectedIconPath": "images/tab/dianying_hl.png"
+        "pagePath": "pages/posts/post",
+        "text": "机构咨询",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
       },
       {
         "pagePath": "pages/profile/profile",
