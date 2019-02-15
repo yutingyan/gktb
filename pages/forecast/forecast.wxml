@@ -1,0 +1,19 @@
+<form bindsubmit="formSubmit">
+  <view class="section">
+    <view class="section__title">分数</view>
+    <input name="score" placeholder="预测分数" />
+  </view>
+
+  <view class="section section_gap">
+    <view class="section__title">分科</view>
+    <radio-group name="subject">
+      <label>
+        <radio value="0" checked/>文科</label>
+      <label>
+        <radio value="1" />理科</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">查询</button>
+  </view>
+</form>
