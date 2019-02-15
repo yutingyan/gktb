@@ -1,1 +1,34 @@
-/* pages/profile/profile.wxss */
+ .container{
+  margin-top: 60rpx;
+  height: 100%;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column; 
+}
+ .userinfo{
+  height: 140rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+ }
+ .userimg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+  display: block;
+  overflow: hidden;
+}
+ .username{
+  width: 580rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin-left: 40rpx;
+  display: block;
+}
+.line {
+   margin-top: 12rpx;
+   background-color: whitesmoke;
+   height: 10rpx;
+   width: 100%;
+}

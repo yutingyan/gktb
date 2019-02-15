@@ -1,2 +1,17 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="container">
+  <view class="userinfo" bindtap="">
+    <view class="userimg">
+      <open-data type="userAvatarUrl" />
+    </view>
+    <view class="username">
+      <open-data type="userNickName" />
+    </view>
+  </view>
+  <view class="line"></view>
+  <view>
+    <navigator url="www.baidu.com">
+      <view>点击我跳转到下一个页面</view>
+    </navigator>
+  </view>
+</view>
+
