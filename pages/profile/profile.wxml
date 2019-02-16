@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="userinfo" bindtap="">
+  <view class="userinfo" bindtap="userinfoget">
     <view class="userimg">
       <open-data type="userAvatarUrl" />
     </view>
@@ -8,10 +8,48 @@
     </view>
   </view>
   <view class="line"></view>
-  <view>
-    <navigator url="www.baidu.com">
-      <view>点击我跳转到下一个页面</view>
-    </navigator>
+  <view class="funtab">
+    <view class="funtab-child">
+      <view class="my-fun-imgview">
+        <image class="my-fun-img" src="/images/icon/zhiyuan.png"></image>
+      </view>
+      <view class="my-fun-textview"><text class="my-fun-text">我的志愿</text></view>
+      <view class="my-fun-textview-1"/>
+    </view>
+    <view class="line-fun"></view>
+    <view class="funtab-child">
+      <view class="my-fun-imgview">
+        <image class="my-fun-img" src="/images/icon/zhiyuan.png"></image>
+      </view>
+      <view class="my-fun-textview"><text class="my-fun-text">我的志愿</text></view>
+      <view class="my-fun-textview-1"/>
+    </view>
+    <view class="line-fun"></view>
+    <view class="funtab-child">
+      <view class="my-fun-imgview">
+        <image class="my-fun-img" src="/images/icon/zhiyuan.png"></image>
+      </view>
+      <view class="my-fun-textview"><text class="my-fun-text">我的志愿</text></view>
+      <view class="my-fun-textview-1"/>
+    </view>
+    <view class="line-fun"></view>
+    <view class="funtab-child">
+      <view class="my-fun-imgview">
+        <image class="my-fun-img" src="/images/icon/zhiyuan.png"></image>
+      </view>
+      <view class="my-fun-textview"><text class="my-fun-text">我的志愿</text></view>
+      <view class="my-fun-textview-1"/>
+    </view>
+    <view class="line-fun"></view>
+    <view class="funtab-child">
+      <view class="my-fun-imgview">
+        <image class="my-fun-img" src="/images/icon/zhiyuan.png"></image>
+      </view>
+      <view class="my-fun-textview"><text class="my-fun-text">我的志愿</text></view>
+      <icon ></icon>
+      <view class="my-fun-textview-1"/>
+    </view>
+    <view class="line-fun"></view>
   </view>
 </view>
 

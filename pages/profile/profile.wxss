@@ -12,7 +12,7 @@
   flex-direction: row;
  }
  .userimg{
-  width: 140rpx;
+  width: 150rpx;
   height: 140rpx;
   border-radius: 50%;
   margin-left: 40rpx;
@@ -20,15 +20,51 @@
   overflow: hidden;
 }
  .username{
-  width: 580rpx;
+  width: 570rpx;
   height: 140rpx;
   line-height: 140rpx;
   margin-left: 40rpx;
   display: block;
 }
 .line {
-   margin-top: 12rpx;
+   margin-top: 30rpx;
    background-color: whitesmoke;
    height: 10rpx;
    width: 100%;
+}
+.line-fun {
+   background-color: whitesmoke;
+   height: 5rpx;
+   width: 100%;
+}
+.funtab-child {
+   width: 100%;
+   height: 90rpx;
+   display: flex;
+   flex-direction: row;
+}
+.my-fun-img {
+   width: 50rpx;
+   height: 50rpx;
+   margin-left: 40rpx;
+    
+}
+.my-fun-text {
+  font-size: 30rpx;
+}
+.my-fun-imgview {
+  margin-top: 20rpx;
+}
+.my-fun-textview {
+  margin-left: 20rpx;
+  margin-top: 22rpx;
+}
+.my-fun-textview-1 { 
+  margin-left: 470rpx;
+  margin-top: 35rpx;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #B0B0B0;
+  border-right: 1px solid #B0B0B0;
+  transform: rotate(45deg);
 }
