@@ -1,29 +1,50 @@
+var api = require('../../config/api.js');
+var util = require('../../utils/util.js');
+var user = require('../../utils/user.js');
 //获取应用实例
-const app = getApp()
+var app = getApp()
 Page({
   data: {
+    userInfo: {
+      nickName: '点击登录',
+      avatarUrl: 'https://keblog-1252041665.cos.ap-beijing.myqcloud.com/wx_app/avatar.png'
+    },
+    order: {
+      unpaid: 0,
+      unship: 0,
+      unrecv: 0,
+      uncomment: 0
+    },
+    hasLogin: false
+  },
+  onShow: function () {
+
+    //获取用户的登录信息
+    if (app.globalData.hasLogin) {
+      let userInfo = wx.getStorageSync('userInfo');
+      this.setData({
+        userInfo: userInfo,
+        hasLogin: true
+      });
+
+      let that = this;
+      util.request(api.UserIndex).then(function (res) {
+        if (res.errno === 0) {
+          that.setData({
+            order: res.data.order
+          });
+        }
+      });
+    }
 
   },
-  //登录获取code
-  userinfoget: function () {
-    wx.login({
-      success: function (res) {
-        console.log('code:' + res.code)
-        //发送请求
-        wx.request({
-          url: 'http://localhost:8085/login', //改成自己的服务器地址
-          data: {
-            code: res.code,//上面wx.login()成功获取到的code
-            operFlag: 'getOpenid',
-          },
-          header: {
-            'content-type': 'application/json' //默认值
-          },
-          success: function (res) {
-            console.log(res)
-          }
-        })
-      }
-    })
-  }
+
+  goLogin() {
+    if (!this.data.hasLogin) {
+      wx.navigateTo({
+        url: "/pages/auth/login/login"
+      });
+    }
+  },
+  
 })

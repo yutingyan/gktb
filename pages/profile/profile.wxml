@@ -1,12 +1,12 @@
 <view class="container">
-  <view class="userinfo" bindtap="userinfoget">
-    <view class="userimg">
-      <open-data type="userAvatarUrl" />
-    </view>
-    <view class="username">
-      <open-data type="userNickName" />
+
+  <view class="profile-info" bindtap="goLogin">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="info">
+      <text class="name">{{userInfo.nickName}}</text>
     </view>
   </view>
+
   <view class="line"></view>
   <view class="funtab">
     <view class="funtab-child">

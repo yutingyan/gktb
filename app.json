@@ -4,7 +4,8 @@
     "pages/posts/post",
     "pages/posts/post-detail/post-detail",
     "pages/profile/profile",
-    "pages/guide/guide"
+    "pages/guide/guide",
+    "pages/auth/login/login"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"

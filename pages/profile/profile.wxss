@@ -1,30 +1,44 @@
- .container{
-  margin-top: 60rpx;
+page {
   height: 100%;
-  display: flex;
-  /*row 横向  column 列表  */
-  flex-direction: column; 
+  width: 100%;
+  background: #f4f4f4;
 }
- .userinfo{
-  height: 140rpx;
-  display: flex;
-  /*row 横向  column 列表  */
-  flex-direction: row;
- }
- .userimg{
-  width: 150rpx;
-  height: 140rpx;
-  border-radius: 50%;
-  margin-left: 40rpx;
-  display: block;
+
+.container {
+  background: #f4f4f4;
+  height: auto;
   overflow: hidden;
+  width: 100%;
 }
- .username{
-  width: 570rpx;
-  height: 140rpx;
-  line-height: 140rpx;
-  margin-left: 40rpx;
+
+.profile-info {
+  background-color: rgb(50, 105, 150);
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+
+.profile-info .avatar {
+  height: 148rpx;
+  width: 148rpx;
+  border-radius: 50%;
+}
+
+.profile-info .info {
+  flex: 1;
+  height: 85rpx;
+  padding-left: 31.25rpx;
+}
+
+.profile-info .name {
   display: block;
+  height: 45rpx;
+  line-height: 45rpx;
+  color: #fff;
+  font-size: 37.5rpx;
+  margin-bottom: 10rpx;
 }
 .line {
    margin-top: 30rpx;
