@@ -5,7 +5,8 @@
     "pages/posts/post-detail/post-detail",
     "pages/profile/profile",
     "pages/guide/guide",
-    "pages/auth/login/login"
+    "pages/auth/login/login",
+    "pages/forecast/schoolList/schoolList"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"

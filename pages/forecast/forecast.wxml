@@ -6,11 +6,11 @@
 
   <view class="section section_gap">
     <view class="section__title">分科</view>
-    <radio-group name="subject">
+    <radio-group name="types">
       <label>
-        <radio value="0" checked/>文科</label>
+        <radio value="21" checked/>文科</label>
       <label>
-        <radio value="1" />理科</label>
+        <radio value="11" />理科</label>
     </radio-group>
   </view>
   <view class="btn-area">

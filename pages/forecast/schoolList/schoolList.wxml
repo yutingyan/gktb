@@ -1,0 +1,19 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">编码</view>
+    <view class="th">学校</view>
+    <view class="th">建议类型</view>
+  </view>
+  <block wx:for="{{schoolDatas}}">
+  <view class="tr bg-g">
+      <view class="td">{{item.schoolCode}}</view>
+      <view class="td">{{item.schoolName}}</view>
+      <view class="td">
+        <view  wx:if="{{item.sugTypes==0}}">冲</view>
+        <view  wx:elif="{{item.sugTypes==1}}">稳</view>
+        <view  wx:else>保</view>
+      </view>
+     
+  </view>
+  </block>
+</view>
