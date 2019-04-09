@@ -21,7 +21,8 @@ Page({
     var that = this;
     var formData = e.detail.value; //获取表单所有input的值  
     wx.request({
-      url: 'http://127.0.0.1:8080/gktbserver/forecastSchool',
+       url: 'https://www.sparklers.cn/gktb/forecastSchool',
+    // url:'http://127.0.0.1:8080/forecastSchool',
       data: formData,
       header: { 'Content-Type': 'application/json' },
       success: function (res) {
@@ -29,6 +30,7 @@ Page({
         var that = res.data
         wx.navigateTo({
           url: 'schoolList/schoolList?schoolDatas=' + JSON.stringify(that) 
+        
         })
       }
     })

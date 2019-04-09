@@ -11,7 +11,7 @@
       <view class="td">
         <view  wx:if="{{item.sugTypes==0}}">冲</view>
         <view  wx:elif="{{item.sugTypes==1}}">稳</view>
-        <view  wx:else>保</view>
+        <view  wx:elif="{{item.sugTypes==2}}">保</view>
       </view>
      
   </view>
